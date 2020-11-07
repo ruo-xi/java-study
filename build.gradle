@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    implementation("io.netty:netty-all:4.1.52.Final")
+    implementation("org.reflections:reflections:0.9.12")
+    /**
+     * 查看java对象头
+     */
+    implementation("org.openjdk.jol:jol-core:0.14")
+    /**
+     * akka
+     */
+    implementation("com.typesafe.akka:akka-actor_2.13:2.6.9")
+    implementation("cglib:cglib-sample:3.3.0")
+    implementation('org.springframework:spring-context:5.3.0')
+//    implementation("org.reflections:reflections:0.9.12")
+}

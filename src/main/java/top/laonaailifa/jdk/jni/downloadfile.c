@@ -2,7 +2,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "unistd.h"
-#include "top_laonaailifa_jdk_java_thread_YuThread.h"
+#include "top_laonaailifa_jdk_jni_YuThread.h"
 
 #define NUM_OF_TASKS 5
 
@@ -15,7 +15,7 @@ void *downloadfile(void *filename)
     pthread_exit((void *)downloadtime);
 }
 
-JNIEXPORT void JNICALL Java_top_laonaailifa_jdk_java_thread_YuThread_start0(JNIEnv * env, jobject c1)
+JNIEXPORT void JNICALL Java_top_laonaailifa_jdk_jni_YuThread_start0(JNIEnv * env, jobject c1)
 {
     char *files[NUM_OF_TASKS] = {"file1", "file2", "file3", "file4", "file5"};
     pthread_t threads[NUM_OF_TASKS];

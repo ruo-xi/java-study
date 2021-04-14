@@ -20,11 +20,12 @@ public class SaleOfTickets2 {
             new Thread(() -> {
                 while (tickets.size() > 0){
                     try {
-                        TimeUnit.MILLISECONDS.sleep(10);
+                        TimeUnit.MILLISECONDS.sleep(5);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                     System.out.println(Thread.currentThread().getName()+" sell ticket " + tickets.remove(0));
+                    System.out.println(tickets.size());
                 }
             }).start();
         }

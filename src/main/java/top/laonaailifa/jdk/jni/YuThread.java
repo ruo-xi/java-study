@@ -7,7 +7,13 @@ package top.laonaailifa.jdk.jni;
  * private native void start0();
  */
 
-
+/**
+ * javac -h . YuThread.java
+ *
+ * gcc -fPIC -I /usr/lib/jvm/java-11-jdk/include/linux -I /usr/lib/jvm/java-11-jdk/include  -shared -o libYuThreadNative.so callback.c downloadfile.c
+ *
+ * export LD_LIBRARY_PATH=LD_LIBRARY_PATH:/home/yu/source/java-study/src/main/java/top/laonaailifa/jdk/java/threa
+ */
 public class YuThread {
 
     static {

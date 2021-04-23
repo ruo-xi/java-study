@@ -17,7 +17,7 @@ package top.laonaailifa.jdk.jni;
 public class YuThread {
 
     static {
-        System.loadLibrary("YuThreadNative");
+        System.load("/home/yu/Github/java-study/src/main/java/top/laonaailifa/jdk/jni/libYuThreadNative.so");
     }
 
     public static void main(String[] args) {
